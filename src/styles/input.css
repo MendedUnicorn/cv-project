@@ -1,0 +1,40 @@
+.general-info-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  height: 30%;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.general-info-form input[type="submit"] {
+  color: red;
+  grid-column: 1 / span 2;
+  margin: 20px 30% 0 30%;
+}
+
+.general-info-form input[type="text"],
+.general-info-form input[type="email"] {
+  outline: none;
+  margin: 2px;
+  height: 1.2em;
+  border-radius: 5px;
+  background-color: rgb(242, 237, 232);
+  transition: border 4000ms ease-in-out;
+  border: none;
+  padding: 5px;
+}
+
+.general-info-form input[type="text"]:focus,
+.general-info-form input[type="email"]:focus {
+  margin: 2px;
+  border-radius: 5px;
+  outline: none;
+  outline: 0.2px solid black;
+}
+
+.general-info-form label {
+  line-height: 1.2em;
+  font-size: 1.2em;
+}
