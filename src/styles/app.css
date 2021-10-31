@@ -1,0 +1,14 @@
+.App {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 50%;
+  border: 1px solid green;
+}
+
+.view {
+  width: 50%;
+}

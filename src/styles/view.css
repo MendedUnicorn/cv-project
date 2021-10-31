@@ -1,0 +1,44 @@
+.general-info-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-name {
+  margin-left: 20px;
+}
+
+.view-contact {
+  margin-right: 20px;
+  border: 1px solid red;
+  align-self: center;
+}
+
+.school-element {
+  display: flex;
+  flex-direction: row;
+}
+
+.school-info {
+  width: 35%;
+  border: 1px solid green;
+}
+
+.study-info {
+  width: 65%;
+  border: 1px solid green;
+}
+
+.practical-element {
+  display: flex;
+  flex-direction: row;
+}
+
+.practical-info {
+  width: 35%;
+  border: 1px solid green;
+}
+
+.work-info {
+  width: 65%;
+  border: 1px solid green;
+}

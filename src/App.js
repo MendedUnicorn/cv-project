@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import GeneralInfoInput from "./components/GeneralInfoInput";
+import SchoolInfoInput from "./components/SchoolInfoInput";
+import PracticalInfoInput from "./components/PracticalInfoInput";
+import MainView from "./components/MainView";
+import "./styles/app.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="input">
+        <GeneralInfoInput></GeneralInfoInput>
+        <SchoolInfoInput></SchoolInfoInput>
+        <PracticalInfoInput></PracticalInfoInput>
+      </div>
+      <div className="view">
+        <MainView></MainView>
+      </div>
     </div>
   );
 }
