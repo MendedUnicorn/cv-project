@@ -54,7 +54,6 @@ export default class App extends Component {
             <PracticalInfoInput
               handleChange={this.handleWorkInfoChange}
             ></PracticalInfoInput>
-            <button>Create CV</button>
           </div>
           <div className="view">
             <MainView

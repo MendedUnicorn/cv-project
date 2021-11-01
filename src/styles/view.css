@@ -1,6 +1,7 @@
 .general-info-view {
   display: flex;
   justify-content: space-between;
+  font-family: "Zen Antique", serif;
 }
 .view {
   padding-left: 20px;

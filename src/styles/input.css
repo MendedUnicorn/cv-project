@@ -1,17 +1,24 @@
+h2 {
+  font-size: 1.4em;
+  margin: 5px 0px 5px 0px;
+}
 .general-info-form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  height: 30%;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   padding: 10px;
   border-radius: 10px;
 }
 
 .general-info-form input[type="submit"] {
-  color: red;
   grid-column: 1 / span 2;
-  margin: 20px 30% 0 30%;
+  margin: 10px auto 0 auto;
+  border: none;
+  background-color: rgb(163, 124, 124);
+  color: white;
+  padding: 5px;
+  width: 100px;
 }
 
 .general-info-form input[type="text"],
@@ -20,7 +27,6 @@
   margin: 2px;
   height: 1.2em;
   border-radius: 5px;
-  background-color: rgb(242, 237, 232);
   transition: border 4000ms ease-in-out;
   border: none;
   padding: 5px;
@@ -37,4 +43,74 @@
 .general-info-form label {
   line-height: 1.2em;
   font-size: 1.2em;
+}
+
+.school-info-input {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.school-info-input > form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 2rem);
+  width: 100%;
+}
+
+.school-info-input > form > input {
+  margin: 2px;
+  width: 90%;
+}
+
+.school-info-input > form > input[type="submit"] {
+  grid-column: 1 / span 2;
+  margin: 10px auto 0 auto;
+  border: none;
+  background-color: rgb(163, 124, 124);
+  color: white;
+  padding: 5px;
+  width: 100px;
+}
+
+#description-input {
+  height: 2em;
+  width: 90%;
+  margin-left: 2px;
+  /* margin: 2px 21px -20px 2px; */
+  border: 1px solid black;
+  display: inline-block;
+  resize: none;
+}
+
+.practical-info-input {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.practical-info-input form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(6, 2rem);
+
+  width: 100%;
+}
+.practical-info-input > form > input {
+  margin: 2px 0 2px 0px;
+}
+.practical-info-input form label {
+  margin-right: 10px;
+}
+
+.practical-info-input > form > input[type="submit"] {
+  grid-column: 1 / span 2;
+  margin: 10px auto 0 auto;
+  border: none;
+  background-color: rgb(163, 124, 124);
+  color: white;
+  padding: 5px;
+  width: 100px;
 }
