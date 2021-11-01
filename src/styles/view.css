@@ -81,3 +81,15 @@
   width: 65%;
   padding-right: 20px;
 }
+
+.edit {
+  height: 2rem;
+  width: 5rem;
+  position: relative;
+  top: 1em;
+  right: 1em;
+  border: none;
+  color: white;
+  background-color: rgb(163, 124, 124);
+  color: white;
+}

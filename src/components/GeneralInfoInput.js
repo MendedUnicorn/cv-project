@@ -20,7 +20,12 @@ export default class GeneralInfoInput extends Component {
 
         <label htmlFor="phone-input">Phone Number</label>
         <input type="text" name="phone-input" id="phone-input" pattern="" />
-        <input type="submit" value="Set.." onClick={handleChange} />
+        <input
+          className="btn"
+          type="submit"
+          value="Set.."
+          onClick={handleChange}
+        />
       </form>
     );
   }

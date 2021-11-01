@@ -32,7 +32,7 @@ export default class PracticalInfoInput extends Component {
           <label htmlFor="to-input">To</label>
           <input type="date" name="to-input" id="to-input" />
           <input
-            id="submit-work-data"
+            class={this.props.editing ? "editing" : "btn"}
             type="submit"
             value="Add.."
             onClick={handleChange}

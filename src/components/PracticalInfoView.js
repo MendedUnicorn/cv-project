@@ -17,7 +17,9 @@ export default class PracticalInfoView extends Component {
             <h2>{work.title}</h2>
             <p>{work.text}</p>
           </div>
-          <button onClick={this.props.handleWorkEdit}>Edit</button>
+          <button class="edit" onClick={this.props.handleWorkEdit}>
+            Edit
+          </button>
         </div>
       );
     });

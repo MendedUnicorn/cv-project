@@ -16,7 +16,9 @@ export default class SchoolInfoView extends Component {
             <h2>{education.title}</h2>
             <p>{education.text}</p>
           </div>
-          <button onClick={this.props.handleEducationEdit}>Edit..</button>
+          <button class="edit" onClick={this.props.handleEducationEdit}>
+            Edit..
+          </button>
         </div>
       );
     });
