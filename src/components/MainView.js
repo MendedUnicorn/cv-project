@@ -16,9 +16,15 @@ export default class MainView extends Component {
           phoneNumber={phoneNumber}
         />
         <h2>Education</h2>
-        <SchoolInfoView educations={educations} />
+        <SchoolInfoView
+          educations={educations}
+          handleEducationEdit={this.props.handleEducationEdit}
+        />
         <h2>Work Experience</h2>
-        <PracticalInfoView workPlaces={workPlaces} />
+        <PracticalInfoView
+          workPlaces={workPlaces}
+          handleWorkEdit={this.props.handleWorkEdit}
+        />
       </div>
     );
   }

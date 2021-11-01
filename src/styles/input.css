@@ -59,19 +59,9 @@ h2 {
   width: 100%;
 }
 
-.school-info-input > form > input {
+.school-info-input > form > input:not(.btn, .editing) {
   margin: 2px;
   width: 90%;
-}
-
-.school-info-input > form > input[type="submit"] {
-  grid-column: 1 / span 2;
-  margin: 10px auto 0 auto;
-  border: none;
-  background-color: rgb(163, 124, 124);
-  color: white;
-  padding: 5px;
-  width: 100px;
 }
 
 #description-input {
@@ -105,11 +95,21 @@ h2 {
   margin-right: 10px;
 }
 
-.practical-info-input > form > input[type="submit"] {
+.btn {
   grid-column: 1 / span 2;
   margin: 10px auto 0 auto;
   border: none;
   background-color: rgb(163, 124, 124);
+  color: white;
+  padding: 5px;
+  width: 100px;
+}
+
+.editing {
+  grid-column: 1 / span 2;
+  margin: 10px auto 0 auto;
+  border: none;
+  background-color: rgb(228, 175, 175);
   color: white;
   padding: 5px;
   width: 100px;

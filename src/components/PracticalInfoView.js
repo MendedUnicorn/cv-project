@@ -7,7 +7,7 @@ export default class PracticalInfoView extends Component {
 
     return workPlaces.map((work) => {
       return (
-        <div className="practical-element">
+        <div className="practical-element" key={work.id} id={work.id}>
           <div className="practical-info">
             <h2> {work.companyName} </h2>
             <p>{work.from}</p>
@@ -17,6 +17,7 @@ export default class PracticalInfoView extends Component {
             <h2>{work.title}</h2>
             <p>{work.text}</p>
           </div>
+          <button onClick={this.props.handleWorkEdit}>Edit</button>
         </div>
       );
     });

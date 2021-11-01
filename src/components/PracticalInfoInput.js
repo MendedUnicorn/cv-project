@@ -31,7 +31,12 @@ export default class PracticalInfoInput extends Component {
           <input type="date" name="from-input" id="from-input" />
           <label htmlFor="to-input">To</label>
           <input type="date" name="to-input" id="to-input" />
-          <input type="submit" value="Add.." onClick={handleChange} />
+          <input
+            id="submit-work-data"
+            type="submit"
+            value="Add.."
+            onClick={handleChange}
+          />
         </form>
       </div>
     );

@@ -6,7 +6,7 @@ export default class SchoolInfoView extends Component {
     const { educations } = this.props;
     return educations.map((education) => {
       return (
-        <div className="school-element">
+        <div className="school-element" key={education.id} id={education.id}>
           <div className="school-info">
             <h2>{education.schoolName}</h2>
             <p>From: {education.from}</p>
@@ -16,6 +16,7 @@ export default class SchoolInfoView extends Component {
             <h2>{education.title}</h2>
             <p>{education.text}</p>
           </div>
+          <button onClick={this.props.handleEducationEdit}>Edit..</button>
         </div>
       );
     });
